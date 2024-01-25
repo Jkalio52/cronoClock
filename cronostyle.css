@@ -1,0 +1,91 @@
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+@keyframes sec {
+  to {
+    top: -60em; 
+  }
+}
+@keyframes one-step {
+  15% { top: 0; }
+  16.66666666666667%, 31.66666666666667% { top: -6em;}
+  33.33333333333334%, 48.33333333333333% { top: -12em;}
+  50%, 65% { top: -18em;}
+  66.66666666666668%, 81.66666666666667% { top: -24em;}
+  83.33333333333335%, 98.33333333333333% { top: -30em;}
+  100% { top: -36em;}
+}
+@keyframes two-step {
+  9% { top: 0; }
+  10%, 19% { top: -6em;}
+  20%, 29% { top: -12em;}
+  30%, 39% { top: -18em;}
+  40%, 49% { top: -24em;}
+  50%, 59% { top: -30em;}
+  60%, 69% { top: -36em;}
+  70%, 79% { top: -42em;}
+  80%, 89% { top: -48em;}
+  90%, 99% { top: -54em;}
+  100% { top: -60em;}
+}
+.crono{text-align: center;
+margin-top: 200px;}
+.crono ol {
+  background-color: #18BA9B;
+  display: inline-block;
+  list-style: none;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 0.5em;
+  height: 6.6em;
+  overflow: hidden;
+      position: relative;
+}
+.crono li {
+  float: left;
+  padding: 0 0.5em;
+  background-color: #fff;
+  margin: 0 0.5em;
+  
+  color: #aaa;
+}
+.crono div {
+  float: left;
+  position: relative;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.crono .cronolegend{
+	    position: absolute;
+    top: 5.5em;
+    text-align: center;
+    width: 6em;
+}
+.crono span {
+  display: block;
+  font-size: 6em;
+  line-height: 1em;
+}
+.hour .one, .min .one, .sec .one {
+  animation-name: one-step;
+}
+.hour .two, .min .two, .sec .two  {
+  animation-name: two-step;
+}
+.sec .two {
+  animation-duration: 10s;
+}
+.sec .one {
+  animation-duration: 60s;
+}
+
+.min .two {
+  animation-duration: 600s;
+}
+.min .one {
+  animation-duration: 3600s;
+}
+.hour .two {
+  animation-duration: 36000s;
+}
+.hour .one {
+  animation-duration: 360000s;
+} 
