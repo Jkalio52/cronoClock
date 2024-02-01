@@ -5,6 +5,7 @@
     top: -60em; 
   }
 }
+
 @keyframes one-step {
   15% { top: 0; }
   16.66666666666667%, 31.66666666666667% { top: -6em;}
@@ -14,6 +15,7 @@
   83.33333333333335%, 98.33333333333333% { top: -30em;}
   100% { top: -36em;}
 }
+
 @keyframes two-step {
   9% { top: 0; }
   10%, 19% { top: -6em;}
@@ -27,6 +29,7 @@
   90%, 99% { top: -54em;}
   100% { top: -60em;}
 }
+
 .crono{text-align: center;
 margin-top: 200px;}
 .crono ol {
@@ -40,6 +43,7 @@ margin-top: 200px;}
   overflow: hidden;
       position: relative;
 }
+
 .crono li {
   float: left;
   padding: 0 0.5em;
@@ -48,32 +52,39 @@ margin-top: 200px;}
   
   color: #aaa;
 }
+
 .crono div {
   float: left;
   position: relative;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
+
 .crono .cronolegend{
 	    position: absolute;
     top: 5.5em;
     text-align: center;
     width: 6em;
 }
+
 .crono span {
   display: block;
   font-size: 6em;
   line-height: 1em;
 }
+
 .hour .one, .min .one, .sec .one {
   animation-name: one-step;
 }
+
 .hour .two, .min .two, .sec .two  {
   animation-name: two-step;
 }
+
 .sec .two {
   animation-duration: 10s;
 }
+
 .sec .one {
   animation-duration: 60s;
 }
@@ -81,12 +92,15 @@ margin-top: 200px;}
 .min .two {
   animation-duration: 600s;
 }
+
 .min .one {
   animation-duration: 3600s;
 }
+
 .hour .two {
   animation-duration: 36000s;
 }
+
 .hour .one {
   animation-duration: 360000s;
 } 
