@@ -1,5 +1,15 @@
 @import url(http://fonts.googleapis.com/css?family=Poiret+One);
 
+html {
+  display: flex; 
+  flex-direction: row; 
+  align-items: center; 
+  justify-content: center;
+  /*background-color: fff;*/
+}
+
+/*display: flex; flex-direction: row; align-items: center; justify-content: center;*/
+
 @keyframes sec {
   to {
     top: -60em; 
@@ -30,8 +40,10 @@
   100% { top: -60em;}
 }
 
-.crono{text-align: center;
-margin-top: 200px;}
+.crono {text-align: center;
+margin-top: 400px;
+}
+
 .crono ol {
   background-color: #18BA9B;
   display: inline-block;
@@ -49,7 +61,7 @@ margin-top: 200px;}
   padding: 0 0.5em;
   background-color: #fff;
   margin: 0 0.5em;
-  color: #aaa;
+  color: #000;
 }
 
 .crono div {
